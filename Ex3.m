@@ -1,40 +1,26 @@
-%tema_de_casa_exercitiu4
-
-t1=0:0.2:10;
-s1=0.8*sin(2*pi*0.333*t1);
-for i=1:1:length(s1);      
-    if s1(i)<0;
-        s1(i)=0;
+function Ex3()
+    N = 4; %4 niveluri
+    ts = 0.001;
+    t = 0:ts:N;
+    
+    j = 1;
+    
+    for i = 1:length(t)
+     if  t(i) <= j*0.25
+         if j <= length(t)
+             x(i) = t(j);
+         else
+             x(i) = 0;
+         end
+     else
+        if j <= length(t)
+             x(i) = t(j);
+        end
+        j = j+1; 
+     end
     end
+    
+    axis([0 20 -5 3])
+    plot(t,x);
+   
 end
-subplot(3,1,1)
-plot(t1,s1),grid
-xlabel('Timp(sec)')
-ylabel('Amplitude')
-
-
-
-t2=0:0.02:10;
-s2=0.8*sin(2*pi*0.333*t2);
-for i=1:1:length(s2);
-    if s2(i)<0;
-        s2(i)=0;
-    end
-end
-subplot(3,1,2)
-plot(t2,s2),grid
-xlabel('Time(sec)')
-ylabel('Amplitude')
-
-
-t3=0:0.002:10;
-s3=0.8*sin(2*pi*0.333*t3);
-for i=1:1:length(s3);
-    if s3(i)<0;
-        s3(i)=0;
-    end
-end
-subplot(3,1,3)
-plot(t3,s3),grid
-xlabel('Time(sec)')
-ylabel('Amplitude')
