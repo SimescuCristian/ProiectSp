@@ -1,4 +1,5 @@
 function Ex1()
+
     a = 0:0.1:2; % a=[0,0.1,0.2,...,2]
     a_lung=length(a); % lungimea lui a
     b = ones(a_lung,1); % b = matrice coloana cu a_lung elemente pe coloana
