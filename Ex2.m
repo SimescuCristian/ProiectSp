@@ -1,4 +1,4 @@
-function tema_de_casa_exercitiu1()
+function Ex1()
 
 fs = 2000;
 t = 0:1/fs:100;
