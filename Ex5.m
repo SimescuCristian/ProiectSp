@@ -15,5 +15,4 @@ plot(t2,s2,'.-'), xlabel('Timp [s]'), grid
 t3=0:0.0002:0.2;
 s3=2*sin(2*pi*F*t3);
 figure(3)
-
 plot(t3,s3,'.-'), xlabel('Timp [s]'), grid
