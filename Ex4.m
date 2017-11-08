@@ -1,4 +1,4 @@
-%tema_de_casa_exercitiu4
+function Ex4()
 
 t1=0:0.2:10;
 s1=0.8*sin(2*pi*0.333*t1);
